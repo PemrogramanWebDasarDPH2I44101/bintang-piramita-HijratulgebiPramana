@@ -13,7 +13,22 @@
  </head>
 
  <body>
+<form method="POST">
+		<label>inputkan angka</label>
+		<input type="text" name="angka">
+		<input type="submit">
+	</form>
 
+	<?php
+	$coba = $_POST["angka"];
+
+	for($i=0;$i<=$coba;$i++){
+		for($p=$coba-$i;$p>=1;$p--){
+			echo"*";
+		}
+		echo "<br>";
+	}
+	?>
  </body>
 
  </html>
